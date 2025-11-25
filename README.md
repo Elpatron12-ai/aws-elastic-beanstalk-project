@@ -71,7 +71,6 @@ The following steps were used to deploy this app:
 
 ##  Live Environment URL
 
-http\://aws-elastic-beanstalk-project-env.eba-x6gzxacj.us-east-1.elasticbeanstalk.com/
 
 ```
 http://aws-elastic-beanstalk-project-env.eba-x6gzxacj.us-east-1.elasticbeanstalk.com/
