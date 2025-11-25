@@ -71,8 +71,6 @@ The following steps were used to deploy this app:
 
 ##  Live Environment URL
 
-http\://aws-elastic-beanstalk-project-env.eba-x6gzxacj.us-east-1.elasticbeanstalk.com/
-
 ```
 http://aws-elastic-beanstalk-project-env.eba-x6gzxacj.us-east-1.elasticbeanstalk.com/
 ```
@@ -86,7 +84,34 @@ http://aws-elastic-beanstalk-project-env.eba-x6gzxacj.us-east-1.elasticbeanstalk
 
 ---
 
-##  License
+## Cleanup
+
+To avoid unexpected AWS charges, make sure to clean up the resources created in this project:
+
+1. **Terminate the Elastic Beanstalk Environment**
+   - Go to Elastic Beanstalk console → your environment → **Actions → Terminate environment**.
+2. **Delete the Elastic Beanstalk Application** (optional)
+   - In the EB console, go to **Applications** → select the application → **Actions → Delete application**.
+3. **Delete Related IAM Roles** (optional)
+   - The roles created automatically are safe to leave, but you may delete them if not needed.
+
+---
+
+
+
+
+
+## Future Enhancements
+
+- Add environment variables for configuration
+- Add a database (DynamoDB or RDS)
+- Add a CI/CD pipeline (GitHub Actions → Elastic Beanstalk)
+- Add logging using Winston or CloudWatch
+- Add API routes and expand the Node.js app
+
+---
+
+## License
 
 This project is licensed under the MIT License.
 
